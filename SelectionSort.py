@@ -1,5 +1,3 @@
-from utility import Swap
-
 def SelectionSort(list):
     for i in range(len(list)): 
         min = i

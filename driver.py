@@ -2,11 +2,11 @@
 import random
 
 # Imports for Algorithms
-import SelectionSort
+import Algorithms
 
 # Put your algorithms here
 Algorithms = [
-    SelectionSort.SelectionSort
+    Algorithms.SelectionSort
 ]
 
 def GenRandomList(min, max):
