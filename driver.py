@@ -2,11 +2,13 @@
 import random
 
 # Imports for Algorithms
-import Algorithms
+import Algorithms.SelectionSort
+import Algorithms.BubbleSort
 
 # Put your algorithms here
-Algorithms = [
-    Algorithms.SelectionSort
+AlgorithmsList = [
+    Algorithms.SelectionSort.Sort,
+    Algorithms.BubbleSort.Sort
 ]
 
 def GenRandomList(min, max):
@@ -26,20 +28,20 @@ def TestAlgorithms(Algorithm):
         RandomList = GenRandomList(0, case)
         Algorithm(RandomList)
         print(case, RandomList)
-        if (RandomList):
+        if (isSortedAscending(RandomList)):
             print("[SUCCESS]")
         else:
-            print("[FAILED")
+            print("[FAILED]")
     print("")
         
-
 def isSortedAscending(list):
-    if (list.len() == 1):
+    n = len(list)
+    if (n == 1):
         return True
     
-    for i in range(list.len()):
+    for i in range(n-1):
         if (list[i] > list[i+1]):
             return False
     return True
         
-[TestAlgorithms(Algorithm) for Algorithm in Algorithms]
+[TestAlgorithms(Algorithm) for Algorithm in AlgorithmsList]
