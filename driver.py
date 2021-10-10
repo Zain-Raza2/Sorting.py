@@ -4,11 +4,13 @@ import random
 # Imports for Algorithms
 import Algorithms.SelectionSort
 import Algorithms.BubbleSort
+import Algorithms.InsertionSort
 
 # Put your algorithms here
 AlgorithmsList = [
     Algorithms.SelectionSort.Sort,
-    Algorithms.BubbleSort.Sort
+    Algorithms.BubbleSort.Sort,
+    Algorithms.InsertionSort.Sort
 ]
 
 def GenRandomList(min, max):
