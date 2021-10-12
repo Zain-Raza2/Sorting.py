@@ -1,4 +1,4 @@
-import Utility.Swap
+import Utility
 
 def Sort(list):
     n = len(list)
@@ -7,4 +7,4 @@ def Sort(list):
         for j in range(i+1, n):
             if list[j] < list[min]: 
                 min = j
-        Utility.Swap.Swap(list, i, min)
+        Utility.Swap(list, i, min)
