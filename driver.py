@@ -8,9 +8,9 @@ import Algorithms.InsertionSort
 
 # Put your algorithms here
 AlgorithmsList = [
-    Algorithms.SelectionSort.Sort,
-    Algorithms.BubbleSort.Sort,
-    Algorithms.InsertionSort.Sort
+    Algorithms.SelectionSort,
+    Algorithms.BubbleSort,
+    Algorithms.InsertionSort,
 ]
 
 def GenRandomList(min, max):
@@ -28,7 +28,7 @@ def TestAlgorithms(Algorithm):
     print("Testing for:", Algorithm.__name__)
     for case in TestCases:
         RandomList = GenRandomList(0, case)
-        Algorithm(RandomList)
+        Algorithm.Sort(RandomList)
         print(case, RandomList)
         if (isSortedAscending(RandomList)):
             print("[SUCCESS]")
