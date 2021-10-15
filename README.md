@@ -2,7 +2,7 @@
 
 ## What is Sorting.py?
 
-Sorting.py is a project with the pythom implementation of common sorting algorithms.
+Sorting.py is a project with the python implementation of common sorting algorithms.
 
 -   Algorithms folder holds the source code for all the algorithms.
 -   Utility.py holds basic utility functions.
